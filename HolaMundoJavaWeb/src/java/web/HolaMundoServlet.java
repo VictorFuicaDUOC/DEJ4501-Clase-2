@@ -15,7 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import negocio.Saludador;
 /**
  *
  * @author cetecom
@@ -29,8 +29,8 @@ public class HolaMundoServlet extends HttpServlet {
         response.setContentType("text/html");
         // obtengo un objeto para la respuesta...
         PrintWriter out = response.getWriter();
-        out.println("Hola mundo, desde Java!");
-        
+        String saludo = Saludador.elegirSaludo();
+        out.println(saludo + ", desde Java!");
     }
 
 
