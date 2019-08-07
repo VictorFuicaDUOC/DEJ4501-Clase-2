@@ -10,7 +10,7 @@ package negocio;
  * @author cetecom
  */
 public class Saludador {
-    private static String[] saludos = {"Hola Mundo","Hello World","Ciao Mondo","Hej Varlden"};
+    private static String[] saludos = {"Hola Mundo","Hello World","Ciao Mondo","Hej Världen"};
     public static String elegirSaludo(){
         return saludos[(int) (Math.random() * saludos.length)];
     }
